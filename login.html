@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RUDRA Login Form</title>
+  <link rel="stylesheet" href="STYLE.CSS">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef;
+      padding: 20px;
+    }
+
+    h1 {
+      color: darkslategray;
+    }
+
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    input[type="time"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .radio-group,
+    .checkbox-group {
+      margin-top: 10px;
+    }
+
+    input[type="submit"] {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: darkslateblue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: slateblue;
+    }
+
+    a {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>RUDRA</h1>
+  <hr>
+  <h1 style="color: blueviolet;">LOGIN</h1>
+
+  <form>
+    <label for="name">Enter your name</label>
+    <input type="text" id="name" placeholder="Your name">
+
+    <label for="email">Enter your email</label>
+    <input type="email" id="email" placeholder="example@domain.com">
+
+    <label for="password">Enter password</label>
+    <input type="password" id="password" placeholder="********">
+
+    <label for="dob">Enter your date of birth</label>
+    <input type="date" id="dob">
+
+    <label>Which country do you belong to?</label>
+    <div class="radio-group">
+      <input type="radio" id="india" name="country" value="India"><label for="india">India</label><br>
+      <input type="radio" id="usa" name="country" value="USA"><label for="usa">USA</label><br>
+      <input type="radio" id="pakistan" name="country" value="Pakistan"><label for="pakistan">Pakistan</label><br>
+      <input type="radio" id="japan" name="country" value="Japan"><label for="japan">Japan</label><br>
+      <input type="radio" id="china" name="country" value="China"><label for="china">China</label><br>
+      <input type="radio" id="russia" name="country" value="Russia"><label for="russia">Russia</label><br>
+      <input type="radio" id="brazil" name="country" value="Brazil"><label for="brazil">Brazil</label><br>
+      <input type="radio" id="bangladesh" name="country" value="Bangladesh"><label for="bangladesh">Bangladesh</label>
+    </div>
+
+    <label>Which channel do you like?</label>
+    <div class="checkbox-group">
+      <input type="checkbox" id="abp" value="ABP News"><label for="abp">ABP News</label><br>
+      <input type="checkbox" id="lallantop" value="Lallantop"><label for="lallantop">Lallantop</label><br>
+      <input type="checkbox" id="newsnation" value="News Nation"><label for="newsnation">News Nation</label><br>
+      <input type="checkbox" id="rudra" value="RUDRA"><label for="rudra">RUDRA</label><br>
+      <input type="checkbox" id="all" value="All Channels"><label for="all">All Channels</label>
+    </div>
+
+    <label for="time">Enter current time</label>
+    <input type="time" id="time">
+
+    <input type="submit" value="Submit">
+
+    <a href="index.html">Click here to visit my website</a>
+  </form>
+
+</body>
+</html>

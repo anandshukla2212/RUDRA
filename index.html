@@ -1,186 +1,226 @@
-<!DOCTYPE html>
+s<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RUDRA Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RUDRA - Bhavanipati</title>
+  <link rel="stylesheet" href="ANAND.CSS" />
   <style>
-    * {
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body {
-      background-color: #f4f6f8;
-      color: #333;
-      line-height: 1.6;
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
     }
 
     header {
+      background-color: darkred;
+      color: white;
+      padding: 30px 20px;
       text-align: center;
-      margin-bottom: 30px;
     }
 
-    header img.logo {
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .logo-container img {
       width: 120px;
-      height: 120px;
+      height: auto;
       border-radius: 50%;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      margin-bottom: 15px;
-      object-fit: cover;
-    }
-
-    header h1 {
-      color: #5620b4;
-      font-size: 3rem;
-      margin-bottom: 5px;
-    }
-
-    header h4 {
-      color: brown;
-      font-weight: normal;
-      margin-bottom: 15px;
-    }
-
-    nav {
-      text-align: center;
-      margin: 20px 0;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #fff;
-      background-color: #007bff;
-      padding: 10px 20px;
-      margin: 0 10px;
-      border-radius: 5px;
-      transition: background 0.3s ease;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      background-color: #0056b3;
-    }
-
-    section {
-      margin: 30px auto;
-      max-width: 900px;
-      background: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    section img {
-      width: 100%;
-      max-height: 300px;
-      object-fit: cover;
-      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
       margin-bottom: 10px;
     }
 
-    section a {
-      display: inline-block;
-      margin-top: 10px;
-      text-decoration: none;
-      color: #007bff;
-      font-weight: bold;
+    .logo-container h1 {
+      font-size: 36px;
+      margin: 0;
     }
 
-    section a:hover {
+    .logo-container p {
+      font-size: 18px;
+      color: #ffefef;
+      margin: 0;
+    }
+
+    section {
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h1, h2, h3, h4, h5 {
+      margin-top: 0;
+    }
+
+    a {
+      color: navy;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
       text-decoration: underline;
     }
 
-    footer {
+    ul {
+      padding-left: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
       text-align: center;
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 2px solid #ccc;
     }
 
-    footer h2,
-    footer h3 {
-      color: #6a1b9a;
-      margin: 10px 0;
+    th {
+      background-color: #004d99;
+      color: white;
     }
 
-    footer img {
-      margin: 10px auto;
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    iframe {
       display: block;
-      height: 200px;
-      width: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      margin: 30px auto;
+      max-width: 100%;
     }
 
-    hr {
-      margin: 20px 0;
-      border: none;
-      border-top: 2px solid #ccc;
+    .login-section {
+      text-align: center;
     }
 
-    /* Responsive */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
+    .login-section a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: darkred;
+      color: white;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
 
-      nav a {
-        display: block;
-        margin: 10px auto;
-        width: 90%;
-      }
+    .login-section a:hover {
+      background-color: crimson;
+    }
+
+    footer {
+      background-color: #111;
+      color: #eee;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <!-- Your Logo Image: Replace 'logo.png' with your actual logo file name -->
-    <img src="rudra.jpg" alt="RUDRA Logo" class="logo" />
-    <h1>RUDRA</h1>
-    <h4>RUDRA@GMAIL.COM</h4>
-    <hr />
-    <p>Welcome to my website</p>
+    <div class="logo-container">
+      <img src="rudra.jpg" alt="RUDRA Logo" />
+      <h1>RUDRA</h1>
+      <p>भवानिपति</p>
+    </div>
   </header>
 
-  <nav>
-    <a href="login.html">Login</a>
-    <a href="signup.html">Signup</a>
-  </nav>
-
   <section>
-    <img src="hospital 3.jpg" alt="Hospital Image" />
-    <a href="hospital.html">Check hospitals near you</a>
+    <h1 style="color: chartreuse;">Terrorist attack after 2014</h1>
+    <h3>If you don't believe, you can verify on 
+      <a href="https://www.google.co.in/" target="_blank">Google</a>.
+    </h3>
   </section>
 
   <section>
-    <img src="mall 2.jpg" alt="Mall Image" />
-    <a href="mall.html">Explore shops at your local mall</a>
+    <h5 style="color: rgb(8, 28, 181);">
+      As of mid-May 2025, the situation in PAHALGAM, Jammu and Kashmir, is tense after the April 22 attack. 
+      26 people including tourists were killed. Lashkar-e-Taiba and The Resistance Front attacked Baisaran Valley. 
+      Tourism suspended. 175 suspects detained. Army and CRPF active. NIA investigating. India launched 
+      "Operation Sindoor".
+    </h5>
+    <ul>
+      <li>Security forces conduct operations in Anantnag and Pahalgam forest areas</li>
+      <li>Tourism suspended in 48 of 87 locations</li>
+      <li>NIA tracking mastermind via CCTV, SIM analysis, eyewitness</li>
+      <li>Tourism industry suffers. Protests in several cities. Advisories issued.</li>
+    </ul>
   </section>
 
   <section>
-    <img src="rudra.jpg" alt="News" />
-    <a href="index.html">Latest News & Updates</a>
+    <h4 style="color: blueviolet;">BUT I THINK THIS IS NOT THE FIRST TIME — MANY ATTACKS HAVE OCCURRED SINCE 2014.</h4>
+    <ul>
+      <li>2015 - Gurdaspur attack, Punjab – 7 killed</li>
+      <li>2016 - Pathankot attack – 7 killed</li>
+      <li>2016 - Uri attack – 19 killed</li>
+      <li>2017 - Amarnath Yatra attack – 8 killed</li>
+      <li>2019 - Pulwama suicide bombing – 40+ CRPF jawans martyred</li>
+      <li>2024 - Reasi terror attack targeting pilgrims</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📊 Complete Data of Terrorist Incidents (2014–2025)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>S.NO</th><th>DATE</th><th>INCIDENT</th><th>LOCATION</th>
+          <th>KILLED</th><th>INJURED</th><th>REMARKS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>108</td><td>14 FEB 2019</td><td>PULWAMA ATTACK</td><td>J&K</td><td>46</td><td>-</td><td>IAF Airstrike on JeM</td></tr>
+        <tr><td>109</td><td>5 APR 2022</td><td>ATTACK ON NON-KASHMIRI</td><td>J&K</td><td>6</td><td>12</td><td>Tourists targeted</td></tr>
+        <tr><td>110</td><td>9 MAY 2023</td><td>HAND GRENADE ATTACK</td><td>SRINAGAR</td><td>3</td><td>15</td><td>Shocking event</td></tr>
+        <tr><td>111</td><td>1 AUG 2023</td><td>FIRING IN KUPWARA</td><td>J&K</td><td>9</td><td>2</td><td>Ceasefire broken</td></tr>
+        <tr><td>112</td><td>17 JAN 2024</td><td>GUN ATTACK</td><td>RAJOURI</td><td>11</td><td>3</td><td>Tourists targeted</td></tr>
+        <tr><td>113</td><td>25 DEC 2024</td><td>ATTACK ON XMAS</td><td>J&K</td><td>13</td><td>2</td><td>Christians targeted</td></tr>
+        <tr><td>114</td><td>1 JAN 2025</td><td>CAR BOMB BLAST</td><td>BARAMULLA</td><td>7</td><td>18</td><td>Triggered by remote</td></tr>
+        <tr><td>115</td><td>26 JAN 2025</td><td>REPUBLIC DAY ATTACK</td><td>SOPIAN</td><td>5</td><td>7</td><td>Flag burned</td></tr>
+        <tr><td>116</td><td>1 MAR 2025</td><td>IED BLAST</td><td>PULWAMA</td><td>3</td><td>6</td><td>RDX used</td></tr>
+        <tr><td>117</td><td>10 MAR 2025</td><td>GUN ATTACK</td><td>BANDIPORA</td><td>4</td><td>5</td><td>School bus targeted</td></tr>
+        <tr><td>118</td><td>18 MAR 2025</td><td>BLAST IN JAMMU</td><td>JAMMU</td><td>8</td><td>10</td><td>Huge explosion</td></tr>
+        <tr><td>119</td><td>1 APR 2025</td><td>BOMB ON RAILWAY TRACK</td><td>RAJOURI</td><td>2</td><td>14</td><td>Train derailed</td></tr>
+        <tr><td>120</td><td>13 APR 2025</td><td>ATTACK ON BIKERS</td><td>ANANTNAG</td><td>6</td><td>5</td><td>Youth targeted</td></tr>
+        <tr><td>121</td><td>18 APR 2025</td><td>FIRING</td><td>PAHALGAM</td><td>3</td><td>1</td><td>First signal</td></tr>
+        <tr><td>122</td><td>22 APR 2025</td><td>PAHALGAM ATTACK</td><td>J&K</td><td>26</td><td>?</td><td>Non-Muslim targets</td></tr>
+      </tbody>
+    </table>
+    <p>📚 <a href="https://en.wikipedia.org/wiki/List_of_terrorist_incidents_in_India" target="_blank">
+      Click here for verified source (Wikipedia)</a>
+    </p>
+  </section>
+
+  <section>
+    <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/WyV-dsvlH1c?si=W9329mVsk3cEGRxz"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+    </iframe>
+  </section>
+
+  <section class="login-section">
+    <h1>If you like it, then login</h1>
+    <a href="login.html">🔐 LOGIN HERE</a>
   </section>
 
   <footer>
-    <h3>Owner and Founder Details</h3>
-    <h2>
-      The owner of the website 'RUDRA' is Anand Shukla. He is currently pursuing B.Tech in Computer Science from AKTU.
-    </h2>
-    <img src="ABHAY.JPG" alt="Owner - Anand Shukla" />
-    <hr />
-    <h2>Co-Founder Details</h2>
-    <h2>Anupam Pandey</h2>
-    <hr />
-    <h1>Thanks for visiting!</h1>
+    <h1>ANAND SHUKLA</h1>
+    <h2>Owner of RUDRA</h2>
+    <p>Thanks for watching. Stay aware. Stay safe.</p>
   </footer>
 
 </body>
